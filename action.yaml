@@ -1,0 +1,19 @@
+# action.yaml
+name: 'CCF application deployment'
+author: 'Microsoft'
+description: 'Automated deployment of a CCF application to ACL instance'
+branding: 
+  icon: 'package'
+  color: 'blue'
+inputs:
+  application:
+    description: 'The application bundle to be deployed to CCF'
+    required: true
+outputs:
+  Response:
+    description: 'The HTTP response code'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.application }}
