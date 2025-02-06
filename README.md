@@ -29,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: CCF deploy
-        uses: msftsettiy/acl-deploy-app-action@v0.1.0-alpha
+        uses: msftsettiy/acl-deploy-app-action@v0.1.2-alpha
         id: deploy
         env:
           CERTD: ${{ secrets.ADMINCERT }}
