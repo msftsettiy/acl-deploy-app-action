@@ -35,7 +35,7 @@ jobs:
           CERTD: ${{ secrets.ADMINCERT }}
           KEYD: ${{ secrets.ADMINKEY }}
         with:
-          application: '<path to your bundled application>'
+          application: '<path to your application bundle.json>'
       - name: Get the response code
         run: echo "The response code is ${{ steps.deploy.outputs.response_code }}"
 ```
