@@ -8,8 +8,8 @@ cp $1 /opt/ccf_sgx/bin/bundle.json
 echo "$CERTD" > /opt/ccf_sgx/bin/cert
 echo "$KEYD" > /opt/ccf_sgx/bin/key
 
-echo "Admin cert: ${CERTD:0:10}..."
-echo "Admin key: ${KEYD:0:10}..."
+echo "Admin cert: ${CERTD:0:50}..."
+echo "Admin key: ${KEYD:0:50}..."
 
 cd /opt/ccf_sgx/bin
 echo "Working dir /opt/ccf_sgx/bin"
